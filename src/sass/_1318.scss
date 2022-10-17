@@ -1,0 +1,9 @@
+@media (max-width: 1319px) {
+  .header {
+    &__form-search {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      width: 5%;
+    }
+  }
+}

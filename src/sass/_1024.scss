@@ -1,0 +1,193 @@
+@media (max-width: 1025px) {
+  .grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .btn {
+    padding: 12px 20px;
+  }
+
+  .header {
+    &__top {
+      padding-top: 25px;
+      padding-bottom: 24px;
+    }
+
+    &__logo {
+      grid-column: 2 span;
+    }
+
+    &__nav {
+      max-width: 96.3%;
+      grid-column: 5 span;
+    }
+  }
+
+  .hero {
+    padding-top: 34px;
+    &__left {
+      grid-column: 4 span;
+      background-image: url("../img/hero-left-img1024.jpg");
+    }
+
+    &__wrap {
+      min-height: 199px;
+      padding: 0 30px 30px;
+    }
+
+    &__author {
+      margin-bottom: 9px;
+    }
+
+    &__title {
+      margin-bottom: 38px;
+      font-size: 34px;
+      line-height: 100%;
+    }
+
+    &__right {
+      grid-column: 4 span;
+    }
+
+    &__header {
+      margin-bottom: 23px;
+    }
+  }
+
+  .about-studio {
+    padding-bottom: 81px;
+
+    &__title {
+      word-spacing: 3px;
+    }
+
+    &__left, &__right {
+      grid-column: 4 span;
+    }
+
+    &__pic {
+      margin-bottom: 23px;
+      width: 466px;
+      height: 332px;
+    }
+
+    &__header-form {
+      margin-bottom: 17px;
+    }
+
+    &-form {
+      flex-direction: column;
+
+      &__container {
+        margin-right: 0;
+      }
+
+      &__input {
+        width: 73.4%;
+        padding: 15px 21px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .projects {
+    &__list {
+      grid-row-gap: 24px;
+    }
+
+    &-item {
+
+      &--wide {
+        background-size: 590px 307px;
+      }
+
+      &__card--wide {
+        padding-top: 31px;
+      }
+
+      &__pic {
+        margin-bottom: 14px;
+      }
+
+      &__descr {
+        margin-bottom: 17px;
+      }
+    }
+
+    &__item:nth-child(3) {
+      grid-column: 4 span;
+    }
+
+    &__item:nth-child(4) {
+      grid-column: 5 span;
+      background-image: url('../img/projects4-1024.jpg');
+    }
+
+    &__item:nth-child(5) {
+      grid-column: 5 span;
+      order: 3;
+      background-image: url('../img/projects5-1024.jpg');
+    }
+
+    &__item:nth-child(6) {
+      order: 1;
+    }
+
+    &__item:nth-child(7) {
+      order: 2;
+    }
+
+  }
+
+  .line-clamp-2 {
+    -webkit-line-clamp: 2;
+  }
+
+  .contacts {
+    &__map {
+      grid-column: 5 span;
+    }
+
+    &-right {
+      grid-column: 3 span;
+      &__descr {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .contacts-content-form {
+    max-width: none;
+    width: 100%;
+    padding: 25px 30px;
+    top: unset;
+
+    &__wrap {
+      display: block;
+      max-width: 57%;
+    }
+
+    &__title {
+      max-width: 227px;
+    }
+
+    &__address {
+      display: inline;
+    }
+
+    &__tel {
+      max-width: 166px;
+    }
+  }
+
+  .footer {
+    &__left, &__descr {
+      grid-column: 3 span;
+    }
+
+    &__logo-pic {
+      margin-bottom: 5px;
+      transform: translateY(6px);
+    }
+  }
+}

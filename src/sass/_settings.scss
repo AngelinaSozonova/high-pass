@@ -1,0 +1,102 @@
+@import "vars";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.btn-reset {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: $gutter;
+}
+
+.container {
+  max-width: 1350px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 13px 20px;
+  border: 3px solid transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: $color-accent;
+  color: $color-white;
+  transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-tuscany;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color:  $color-grenadier;
+  }
+
+  &:active {
+    background-color: $color-grenadier;
+  }
+}
+
+.section-title {
+  margin: 0;
+  font-family: 'TTFirsNeue', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.card-hashtag {
+  position: absolute;
+  background-color: $color-dark;
+}
+
+.card-hashtag-title {
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-white;
+}
+
+
+
+
+

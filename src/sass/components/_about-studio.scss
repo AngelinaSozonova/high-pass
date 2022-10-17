@@ -1,0 +1,98 @@
+.about-studio {
+  padding-top: 31px;
+  padding-bottom: 69px;
+  background-color: $color-dark;
+
+  &__title {
+    margin-bottom: 1px;
+    color: $color-white;
+  }
+
+  &__left {
+    grid-column: 6 span;
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 16px;
+    line-height: 28px;
+    color: $color-small-text;
+  }
+
+  &__right {
+    grid-column: 6 span;
+  }
+
+  &__pic {
+    margin-bottom: 25px;
+    width: 630px;
+    height: 255px;
+    vertical-align: bottom;
+  }
+
+  &__header-form {
+    margin: 0;
+    margin-bottom: 14px;
+    font-family: 'TTFirsNeue', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 22px;
+    color: $color-white;
+  }
+
+  &-form {
+    display: flex;
+    justify-content: space-between;
+
+    &__container {
+      position: relative;
+      flex: 1;
+      margin-right: 7px;
+    }
+
+    &__input {
+
+      width: 95.4%;
+      padding: 15px 23px;
+      border: none;
+      border: 1px solid transparent;
+      font-size: 16px;
+      line-height: 19px;
+      background-color: $color-gray;
+      color: $color-white;
+      transition: border-color .3s ease-in-out;
+
+      &::placeholder {
+        font-size: 16px;
+        line-height: 19px;
+        color: $color-small-text;
+        transition: color .3s ease-in-out;
+      }
+
+      &:hover::placeholder {
+        color: $color-accent;
+      }
+
+      &:focus-visible {
+        outline: none;
+        border-color: $color-accent;
+      }
+
+      &:active {
+        border-color: transparent;
+      }
+    }
+
+    &__btn {
+      max-width: 126px;
+    }
+  }
+}
+
+.js-validate-error-label {
+  position: absolute;
+  top: 3px;
+  left: 23px;
+  font-size: 9px;
+  line-height: 11px;
+}

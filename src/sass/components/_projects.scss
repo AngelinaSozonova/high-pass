@@ -1,0 +1,142 @@
+.projects {
+  padding-top: 68px;
+  padding-bottom: 68px;
+
+  &__title {
+    margin-bottom: 12px;
+    word-spacing: 5px;
+    color: $color-dark;
+  }
+
+  &__wrap-hashtag {
+    padding: 4px 14px;
+    top: 7px;
+    right: 7px;
+  }
+
+  &-item {
+    position: relative;
+    background-size: 630px 300px;
+    background-repeat: no-repeat;
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+      &--wide {
+        align-items: flex-start;
+        padding: 23px 30px 30px;
+      }
+    }
+
+    &__pic {
+      margin-bottom: 14px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    &__descr {
+      display: -webkit-box;
+      margin: 0;
+      margin-bottom: 10px;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: $color-dark;
+    }
+
+    &__date-small-card {
+      margin-top: auto;
+      color: $color-light-gray;
+      background-image: url('../img/mdi_calendar_today.svg');
+    }
+
+    &__date-wide-card {
+      color: $color-white;
+      background-image: url('../img/mdi_calendar_today_white.svg');
+    }
+
+    &__title {
+      margin: 0;
+      margin-bottom: 6px;
+      max-width: 285px;
+      font-family: 'TTFirsNeue', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: $color-white;
+    }
+
+    &__text {
+      margin: 0;
+      margin-bottom: 10px;
+      max-width: 292px;
+      font-size: 16px;
+      line-height: 22px;
+      color: $color-white;
+    }
+
+    &__btn {
+      display: block;
+      padding: 12px 20px;
+      margin-top: auto;
+      border: 3px solid $color-accent;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 19px;
+      color: $color-white;
+      transition: background-color .3s ease-in-out, border-color .3s ease-in-out;
+
+      &:hover {
+        background-color: $color-accent;
+      }
+
+      &:focus-visible {
+        outline: none;
+        background-color: $color-tuscany;
+      }
+
+      &:active {
+        border-color: transparent;
+        background-color: $color-grenadier;
+      }
+    }
+  }
+
+  &__item:nth-child(-n+3) {
+    grid-column: 2 span;
+  }
+
+  &__item:nth-child(4) {
+    background-image: url('../img/projects4.jpg');
+    grid-column: 6 span;
+  }
+
+  &__item:nth-child(5) {
+    background-image: url('../img/projects5.jpg');
+    grid-column: 6 span;
+  }
+
+  &__item:nth-last-child(-n+2) {
+    grid-column: 3 span;
+  }
+
+}
+
+.section-projects-date {
+  display: block;
+  padding-left: 19px;
+  font-size: 12px;
+  line-height: 22px;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+}

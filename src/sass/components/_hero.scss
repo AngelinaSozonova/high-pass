@@ -1,0 +1,84 @@
+.hero {
+  padding-top: 40px;
+  padding-bottom: 68px;
+
+  &__left {
+    position: relative;
+    grid-column: 6 span;
+    background-image: url('../img/hero-left-img.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__wrap-hashtag {
+    padding: 5px 15px;
+    top: 15px;
+    right: 15px;
+  }
+
+  &__wrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 226px;
+    padding: 0 60px 60px;
+  }
+
+  &__main-title {
+    display: none;
+  }
+
+  &__author {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-white;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 32px;
+    max-width: 428px;
+    font-family: 'TTFirsNeue', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 108%;
+    letter-spacing: 1px;
+    color: $color-white;
+  }
+
+  &__btn {
+    max-width: 159px;
+  }
+
+  &__right {
+    grid-column: 6 span;
+  }
+
+  &__header {
+    margin: 0;
+    margin-bottom: 18px;
+    font-family: 'TTFirsNeue', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 104%;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: $gutter;
+
+    li:first-child {
+      grid-column: 2 span;
+    }
+
+    li {
+      img {
+        vertical-align: bottom;
+      }
+    }
+  }
+}
